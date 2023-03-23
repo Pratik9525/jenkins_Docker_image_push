@@ -2,8 +2,8 @@ pipeline {
   agent any
   environment {
     GITHUB_TOKEN=credentials('github-token')
-    IMAGE_NAME='darinpope/jenkins-example-ghcr'
-    IMAGE_VERSION='8.5-204'
+    IMAGE_NAME='https://dockerhub/hello-world'
+    IMAGE_VERSION='nanoserver-1809'
   }
   stages {
     stage('cleanup') {
