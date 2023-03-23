@@ -13,7 +13,7 @@ pipeline {
     }
     stage('build image') {
       steps {
-        bat 'docker build -t $IMAGE_NAME:$IMAGE_VERSION .'
+        bat 'echo docker build -t $IMAGE_NAME:$IMAGE_VERSION .'
       }
     }
     stage('login to GHCR') {
